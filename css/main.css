@@ -94,6 +94,7 @@ section {display: flex; }
 .hero h2 { color: #faa541; }
 .hero h1, .hero h2 { font-size: 63px; font-weight: 700; line-height: 0.9; }
 .hero p { font-size: 21px; font-weight: 700; letter-spacing: 2px; margin: 0 0 10px; }
+/**sales banner **/
 .banner {
     margin: 55px 15px;
     border-top: 1px solid #a0a0a0;
@@ -114,6 +115,7 @@ section {display: flex; }
     font-weight: 400;
     margin-top: 5px;
  }
+ /*main category images */
  .category {
     flex: 0 0 25%;
     padding: 0 15px;
@@ -135,5 +137,66 @@ section {display: flex; }
     font-weight: 700;
     line-height: 1;
  }
+ /*the banner just before the footer*/
+ .full-banner {
+    padding: 0 15px;
+    margin: 50px 0;
+    position: relative;
+ }
+ .full-banner::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #ffffff;
+    top: 30px;
+    bottom: 30px;
+    left: 50px;
+    right: 50px;
+    z-index: 1;
+ }
+ .full-banner-image { 
+    flex: 0 0 60%;
+    background-image: url('../img/vista.jpg');
+    background-size: cover;
+    background-position: top center;
+    min-height: 40px;
+ }
+ .full-banner-sidebar {
+    flex: 0 0 40%;
+    background-color: #364147;
+    text-transform: uppercase;
+    padding: 30px;
+    color: #ffffff;
+ }
+ .full-banner-sidebar h4 {
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    color: #637f94;
+    line-height: 1;
+ }
+ .full-banner-sidebar h4::after {
+     content: "";
+     width: 100px;
+     height: 1px;
+     background-color: #faa541;
+     margin: 20px auto;
+     display: block;
+ }
+ .full-banner-sidebar >div:nth-of-type(1) {
+     font-size: 60px;
+     font-weight: 700;
+     line-height: 1;
+ }
+ .full-banner-sidebar >div:nth-of-type(2) {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+.full-banner-sidebar .btn.btn-default {
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+}
 /****** end mid section styles *********/
 /***************************************/
