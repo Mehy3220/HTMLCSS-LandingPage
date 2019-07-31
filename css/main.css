@@ -201,11 +201,12 @@ section {display: flex; }
 /****** end mid section styles *********/
 /************ footer styles ************/
 footer {
+    display: flex;
     flex-wrap: wrap;
     position: relative;
     z-index: 0;
     min-height: 330px;
-    background-color: black;
+    background-color: #000000;
 }
 footer:after {
     content: "";
@@ -220,7 +221,7 @@ footer:after {
 }
 .lists {
     flex: 0 0 75%;
-    padding: 40px 30px;
+    padding: 40px 15px;
 }
 .link-header {
     text-transform: uppercase;
